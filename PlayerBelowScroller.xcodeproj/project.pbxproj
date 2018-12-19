@@ -12,6 +12,10 @@
 		AF7BAEC521CA4701006AA6FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7BAEC321CA4701006AA6FF /* Main.storyboard */; };
 		AF7BAEC721CA4701006AA6FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7BAEC621CA4701006AA6FF /* Assets.xcassets */; };
 		AF7BAECA21CA4701006AA6FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7BAEC821CA4701006AA6FF /* LaunchScreen.storyboard */; };
+		AF7BAED321CA49AC006AA6FF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BAED121CA49AC006AA6FF /* CollectionViewCell.swift */; };
+		AF7BAED421CA49AC006AA6FF /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF7BAED221CA49AC006AA6FF /* CollectionViewCell.xib */; };
+		AF7BAED621CA4FD3006AA6FF /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BAED521CA4FD3006AA6FF /* Reusable.swift */; };
+		AF7BAED821CA5028006AA6FF /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BAED721CA5028006AA6FF /* UICollectionView+Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		AF7BAEC621CA4701006AA6FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF7BAEC921CA4701006AA6FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF7BAECB21CA4701006AA6FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF7BAED121CA49AC006AA6FF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		AF7BAED221CA49AC006AA6FF /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		AF7BAED521CA4FD3006AA6FF /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		AF7BAED721CA5028006AA6FF /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 			children = (
 				AF7BAEBF21CA4700006AA6FF /* AppDelegate.swift */,
 				AF7BAEC121CA4700006AA6FF /* ViewController.swift */,
+				AF7BAED121CA49AC006AA6FF /* CollectionViewCell.swift */,
+				AF7BAED521CA4FD3006AA6FF /* Reusable.swift */,
+				AF7BAED721CA5028006AA6FF /* UICollectionView+Reusable.swift */,
+				AF7BAED221CA49AC006AA6FF /* CollectionViewCell.xib */,
 				AF7BAEC321CA4701006AA6FF /* Main.storyboard */,
 				AF7BAEC621CA4701006AA6FF /* Assets.xcassets */,
 				AF7BAEC821CA4701006AA6FF /* LaunchScreen.storyboard */,
@@ -96,7 +108,7 @@
 				TargetAttributes = {
 					AF7BAEBB21CA4700006AA6FF = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+                        ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -125,6 +137,7 @@
 			files = (
 				AF7BAECA21CA4701006AA6FF /* LaunchScreen.storyboard in Resources */,
 				AF7BAEC721CA4701006AA6FF /* Assets.xcassets in Resources */,
+				AF7BAED421CA49AC006AA6FF /* CollectionViewCell.xib in Resources */,
 				AF7BAEC521CA4701006AA6FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF7BAEC221CA4700006AA6FF /* ViewController.swift in Sources */,
+				AF7BAED821CA5028006AA6FF /* UICollectionView+Reusable.swift in Sources */,
+				AF7BAED621CA4FD3006AA6FF /* Reusable.swift in Sources */,
 				AF7BAEC021CA4700006AA6FF /* AppDelegate.swift in Sources */,
+				AF7BAED321CA49AC006AA6FF /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -274,7 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+                CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PlayerBelowScroller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bjitgroup.PlayerBelowScroller;
@@ -288,7 +304,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+                CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PlayerBelowScroller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bjitgroup.PlayerBelowScroller;
