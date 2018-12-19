@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var playerView: UIView!
+    @IBOutlet weak var playerView: PlayerView!
     @IBOutlet weak var collectionView: UICollectionView!
 
     let images = Array(repeating: UIImage(imageLiteralResourceName: "taylor_swift_placeholder_image"), count: 10)
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }
 
     func hideCollectionView() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
 //            if let cell = self.collectionView.visibleCells.first {
 //                cell.alpha = 0
 //            }
@@ -46,24 +46,27 @@ class ViewController: UIViewController {
     @objc func swipeLeft(sender: UISwipeGestureRecognizer) {
         print("Right-Left")
         self.collectionView.isHidden = false
-
+        
+        // forward
+        let visibleItemIndexPath = collectionView.indexPathsForVisibleItems.first!
+        let nextItemRowNumber = (visibleItemIndexPath.row + 1) % images.count
+        let nextItemIndexPath = IndexPath(row: nextItemRowNumber, section: visibleItemIndexPath.section)
+        collectionView.scrollToItem(at: nextItemIndexPath, at: .centeredHorizontally, animated: true)
         hideCollectionView()
     }
 
     @objc func swipeRight(sender: UISwipeGestureRecognizer) {
         print("Left-Right")
         self.collectionView.isHidden = false
-
+        
+        // backward
+        
         hideCollectionView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    @IBAction func playButtonTapped(_ sender: UIButton) {
-        print("Play button tapped")
     }
     
 }

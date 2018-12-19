@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF3A067521CAB19800F26291 /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF3A067421CAB19800F26291 /* PlayerView.xib */; };
+		AF3A067721CAB1B900F26291 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3A067621CAB1B900F26291 /* PlayerView.swift */; };
 		AF7BAEC021CA4700006AA6FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BAEBF21CA4700006AA6FF /* AppDelegate.swift */; };
 		AF7BAEC221CA4700006AA6FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BAEC121CA4700006AA6FF /* ViewController.swift */; };
 		AF7BAEC521CA4701006AA6FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7BAEC321CA4701006AA6FF /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF3A067421CAB19800F26291 /* PlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerView.xib; sourceTree = "<group>"; };
+		AF3A067621CAB1B900F26291 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		AF7BAEBC21CA4700006AA6FF /* PlayerBelowScroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerBelowScroller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7BAEBF21CA4700006AA6FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF7BAEC121CA4700006AA6FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				AF7BAED521CA4FD3006AA6FF /* Reusable.swift */,
 				AF7BAED721CA5028006AA6FF /* UICollectionView+Reusable.swift */,
 				AF7BAED221CA49AC006AA6FF /* CollectionViewCell.xib */,
+				AF3A067421CAB19800F26291 /* PlayerView.xib */,
+				AF3A067621CAB1B900F26291 /* PlayerView.swift */,
 				AF7BAEC321CA4701006AA6FF /* Main.storyboard */,
 				AF7BAEC621CA4701006AA6FF /* Assets.xcassets */,
 				AF7BAEC821CA4701006AA6FF /* LaunchScreen.storyboard */,
@@ -108,7 +114,7 @@
 				TargetAttributes = {
 					AF7BAEBB21CA4700006AA6FF = {
 						CreatedOnToolsVersion = 9.0;
-                        ProvisioningStyle = Automatic;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -139,6 +145,7 @@
 				AF7BAEC721CA4701006AA6FF /* Assets.xcassets in Resources */,
 				AF7BAED421CA49AC006AA6FF /* CollectionViewCell.xib in Resources */,
 				AF7BAEC521CA4701006AA6FF /* Main.storyboard in Resources */,
+				AF3A067521CAB19800F26291 /* PlayerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +159,7 @@
 				AF7BAEC221CA4700006AA6FF /* ViewController.swift in Sources */,
 				AF7BAED821CA5028006AA6FF /* UICollectionView+Reusable.swift in Sources */,
 				AF7BAED621CA4FD3006AA6FF /* Reusable.swift in Sources */,
+				AF3A067721CAB1B900F26291 /* PlayerView.swift in Sources */,
 				AF7BAEC021CA4700006AA6FF /* AppDelegate.swift in Sources */,
 				AF7BAED321CA49AC006AA6FF /* CollectionViewCell.swift in Sources */,
 			);
@@ -290,7 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PlayerBelowScroller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bjitgroup.PlayerBelowScroller;
@@ -304,7 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PlayerBelowScroller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bjitgroup.PlayerBelowScroller;
